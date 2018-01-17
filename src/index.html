@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+<head>
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="css/font-awesome.min.css">
+  <link rel="stylesheet" href="css/bootstrap.css">
+  <link rel="stylesheet" href="css/style.css">
+  <title>BURGERS WITHOUT BORDERS STAFF</title>
+</head>
+
+<body id="home">
+
+
+  <!-- HOME SECTION -->
+  <header id="home-section">
+    <div class="dark-overlay">
+      <div id="inner-home" style="padding-top:40px;">
+        <div class="container">
+          <h1 style="color:white; text-align:center"> HOME</h1>
+          <div class="row">
+
+            <!--............... COLUMN 1 .............................-->
+            <div class="col-lg-3">
+                <div class="tab-pane">
+              <div class="card bg-primary text-center card-form">
+                <div class="card-body">
+                  <h3> STOCKLIST</h3>
+                  <form>
+                    <div class="form-group">
+                      <table class="table-striped table-bordered stocklist_table" >
+                      </table>
+                    </div>
+                    <input type="button" value="RESTOCK"class="btn btn-outline-danger restock_btn" >
+                  </form>
+                </div>
+              </div>
+            </div>
+            </div>
+
+            <!--............... COLUMN 2 .............................-->
+            <div class="col-lg-6">
+              <div class="row">
+                <!--............... SUB COLUMN 1 .............................-->
+                <div class= "col-lg-6">
+                  <div class="card bg-primary text-center card-form">
+                    <div class="card-body">
+                      <h3> ORDERS</h3>
+                      <a href="../staff_orders.html">
+                        <img src="../images/burger.png">
+                      </a>
+                    </div>
+                  </div>
+                </div>
+                <!--............... SUB COLUMN 2 .............................-->
+                <div class="col-lg-6">
+                  <div class="card bg-primary text-center card-form">
+                    <div class="card-body">
+                      <h3> STATISTICS</h3>
+                      <a href="../staff_statistics.html">
+                        <img src="../images/statistics.png">
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="row">
+                <!--............... SUB COLUMN 1 .............................-->
+                <div class="col-lg-6">
+                  <div class="card bg-primary text-center card-form">
+                    <div class="card-body">
+                      <h3> RESIGN</h3>
+                      <a href="../staff_resign.html">
+                        <img src="../images/freedom.png">
+                      </a>
+                    </div>
+                  </div>
+                </div>
+                <!--............... SUB COLUMN 2 .............................-->
+                <div class="col-lg-6">
+                  <div class="card bg-primary text-center card-form">
+                    <div class="card-body">
+                      <h3> DONATE</h3>
+                      <a href="../staff_donate.html">
+                        <img src="../images/donation.png">
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+        </div>
+        </div>
+      </div>
+    </header>
+
+    <script src="https://www.gstatic.com/firebasejs/4.6.1/firebase.js"></script>
+    <script>
+      // Initialize Firebase
+      var config = {
+        apiKey: "AIzaSyCaETlOFmxp7eOYzYj3nrzU-x5Zo6JMxsM",
+        authDomain: "burgers-without-borders.firebaseapp.com",
+        databaseURL: "https://burgers-without-borders.firebaseio.com",
+        projectId: "burgers-without-borders",
+        storageBucket: "burgers-without-borders.appspot.com",
+        messagingSenderId: "507816012991"
+      };
+      firebase.initializeApp(config);
+    </script>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/index.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+  </body>
+  </html>

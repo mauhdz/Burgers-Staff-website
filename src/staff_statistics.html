@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+<head>
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="css/font-awesome.min.css">
+  <link rel="stylesheet" href="css/bootstrap.css">
+  <link rel="stylesheet" href="css/style.css">
+  <title>BURGERS WITHOUT BORDERS STAFF</title>
+</head>
+
+<body >
+  <nav class="navbar navbar-expand-sm bg-dark navbar-dark fixed-top">
+    <div class="container">
+      <a href="index.html" class="nav-brand"> HOME </a>
+      <button class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+        <span class="navbar-toggler-icon"> </span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarCollapse">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a href="../staff_orders.html" class="nav-link">ORDERS </a>
+          </li>
+          <li class="nav-item">
+            <a href="../staff_statistics.html" class="nav-link">STATISTICS </a>
+          </li>
+          <li class="nav-item">
+            <a href="../staff_donate.html" class="nav-link">DONATE </a>
+          </li>
+          <li class="nav-item">
+            <a href="../staff_resign.html"class="nav-link"> RESIGN</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- HOME SECTION -->
+  <header id="home-section">
+    <div class="dark-overlay">
+      <div id="inner-home">
+        <div class="container" id="graph">
+          <h1 style="color:white;text-align:center;">STATISTICS</h1>
+          <div class="col-lg-6" id="${thisOrdKey}">
+            <div class="card bg-primary text-center card-form">
+              <div class="card-body">
+                <div id="stats_table" style="display:block;margin:auto;">
+
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </header>
+
+    <script src="https://www.gstatic.com/firebasejs/4.6.1/firebase.js"></script>
+    <script>
+    // Initialize Firebase
+    var config = {
+      apiKey: "AIzaSyCaETlOFmxp7eOYzYj3nrzU-x5Zo6JMxsM",
+      authDomain: "burgers-without-borders.firebaseapp.com",
+      databaseURL: "https://burgers-without-borders.firebaseio.com",
+      projectId: "burgers-without-borders",
+      storageBucket: "burgers-without-borders.appspot.com",
+      messagingSenderId: "507816012991"
+    };
+    firebase.initializeApp(config);
+    </script>
+
+    <script src="https://d3js.org/d3.v4.min.js"></script>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/staff_statistics.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+
+  </body>
+  </html>

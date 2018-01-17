@@ -1,0 +1,68 @@
+$bg-color: #931a1d;
+$font-color: #931a1d;
+$primary-color: rgb(64, 64, 64);
+$dark-overlay:rgba(134, 0, 0, 0.7);
+
+body{
+  background: $bg-color;
+  color:$font-color;
+}
+
+.nav-bar{
+  border-bottom-color: $primary-color 3px solid;
+  opacity:0.8;
+}
+
+.tab-pane{
+  overflow-y: scroll;
+  width: 100%;
+  height: 600px;
+}
+#home-section{
+  background:url('../images/burgerBG.png') no-repeat;
+  min-height:700px;
+  background-size: cover;
+  background-attachment: fixed;
+
+  .dark-overlay{
+    background-color:$dark-overlay;
+    position:absolute;
+    top:0;
+    left:0;
+    width: 100%;
+    min-height: 700px;
+  }
+
+  #inner-home{
+    padding-top:80px;
+  }
+
+  .card-body{
+    float: left;
+    width: 100%;
+    padding: 10px;
+    background-color: #fafae6;
+  }
+
+  .card-body img{
+    margin-top: 12px;
+    width: 100%;
+  }
+
+  .column_p {
+      float: left;
+      width: 25%;
+      padding: 10px;
+  }
+
+  .column_p img {
+      margin-top: 12px;
+      width: 100%;
+  }
+
+  .row_p:after {
+      content: "";
+      display: table;
+      clear: both;
+  }
+}

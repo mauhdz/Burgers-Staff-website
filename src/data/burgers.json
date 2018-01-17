@@ -1,0 +1,8 @@
+[
+  {"name": "Bread", "stock": 100},
+  {"name": "Meat", "stock": 30},
+  {"name": "Cheese", "stock": 250},
+  {"name": "Salad", "stock": 10},
+  {"name": "Sauce", "stock": 25}
+
+]
